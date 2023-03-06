@@ -1,0 +1,10 @@
+version: '3'
+services:
+  app:
+    container_name: app
+    build: .
+    restart: always
+    environment:
+      TGBOT_TOKEN:
+    volumes:
+      - ./database:/app/database
